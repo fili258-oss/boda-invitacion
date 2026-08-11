@@ -1,4 +1,5 @@
 import localFont from "next/font/local";
+
 export const iniriaSerif = localFont({
     src: [
         // Thin (100)
@@ -14,5 +15,13 @@ export const iniriaSerif = localFont({
         { path: './fonts/iniria-serif/InriaSerif-BoldItalic.woff2', weight: '700', style: 'italic' },        
     ],
     variable: '--font-iniria-serif',
+    display: 'swap',
+});
+
+export const meowScript = localFont({
+    src: [
+        { path: './fonts/meow-script/MeowScript-Regular.woff2', weight: '400', style: 'normal' },
+    ],
+    variable: '--font-meow-script',
     display: 'swap',
 });

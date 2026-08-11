@@ -4,5 +4,20 @@
 
   /*Tipografías*/
   --font-iniria-serif: var(--font-iniria-serif), sans-serif;
+  --font-meow-script: var(--font-meow-script), sans-serif;
+
+  /*Colores*/
+  --color-primary-50: #FBF7F3;
+  --color-primary-100: #F9EEE7;
+  --color-primary-200: #F6E5DA;
+  --color-primary-300: #EFD4C2;
+  --color-primary-400: #E5BB9F;
+  --color-primary-500: #D49973;
+  --color-primary-600: #B97446;
+  --color-primary-700: #A1633A;
+  --color-primary-800: #815132;
+  --color-primary-900: #68442C;
+  --color-primary-950: #382314;
+
 }
 
