@@ -5,6 +5,7 @@
   /*Tipografías*/
   --font-iniria-serif: var(--font-iniria-serif), sans-serif;
   --font-meow-script: var(--font-meow-script), sans-serif;
+  --font-hortensia: var(--font-hortensia), sans-serif;
 
   /*Colores*/
   --color-primary-50: #FBF7F3;
@@ -19,5 +20,27 @@
   --color-primary-900: #68442C;
   --color-primary-950: #382314;
 
+  --color-secondary-50: #FEF7F1;
+  --color-secondary-100: #FEEFE1;
+  --color-secondary-200: #FEE7D2;
+  --color-secondary-300: #FDD6B4;
+  --color-secondary-400: #FABE89;
+  --color-secondary-500: #F19E55;
+  --color-secondary-600: #DD7922;
+  --color-secondary-700: #C0681B;
+  --color-secondary-800: #9D571B;
+  --color-secondary-900: #79471B;
+  --color-secondary-950: #432409;
+
+}
+
+@keyframes button-pulse {
+  0%,
+  100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.06);
+  }
 }
 

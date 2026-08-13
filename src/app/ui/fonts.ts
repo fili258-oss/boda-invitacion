@@ -25,3 +25,11 @@ export const meowScript = localFont({
     variable: '--font-meow-script',
     display: 'swap',
 });
+
+export const hortensia = localFont({
+    src: [
+        { path: './fonts/hortencia/Hortensia.woff', weight: '400', style: 'normal' },
+    ],
+    variable: '--font-hortensia',
+    display: 'swap',
+});

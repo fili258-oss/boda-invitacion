@@ -1,12 +1,18 @@
-import Image from "next/image";
+import HeroSection from "@/app/ui/sections/HeroSection";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 text-center">
-        <h2 className="font-meow-script text-9xl text-primary-600">Angelo y Carolina</h2>
-        <p>Quieren compartir un momento especial contigo</p>
-      </main>
-    </div>
+    <main className="relative w-full">
+      <HeroSection />
+
+      {/* Próxima sección: pendiente de fondo e ilustración propios */}
+      <section className="flex min-h-dvh w-full flex-col items-center justify-center gap-6 bg-primary-50 px-8 py-16 text-center">
+        <h2 className="font-meow-script text-8xl text-primary-800">Angelo y Carolina</h2>
+        <p className="font-hortensia text-2xl text-primary-900">
+          Quieren compartir un momento especial contigo.
+        </p>
+        <h2 className="font-hortensia text-3xl text-primary-900">¡Nos casamos!</h2>
+      </section>
+    </main>
   );
 }
