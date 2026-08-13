@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { useRef, useState } from "react";
+import { RiCursorHand } from "react-icons/ri";
 
 export default function HeroSection() {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -25,7 +26,7 @@ export default function HeroSection() {
 
       <video
         ref={videoRef}
-        src="/assets/videos/una-persona-dos.mp4"
+        src="/assets/videos/pase-2-personas.mp4"
         playsInline
         preload="auto"
         className="absolute inset-0 h-full w-full object-cover"
@@ -49,11 +50,11 @@ export default function HeroSection() {
               }`}
             />
             <span
-              className={`relative z-10 block rounded-full bg-secondary-600 px-8 py-3 font-hortensia text-xl tracking-wide text-primary-50 shadow-lg shadow-secondary-950/40 ${
+              className={`relative z-10 block rounded-full bg-secondary-600 px-8 py-3 text-xl tracking-wide text-primary-50 shadow-lg shadow-secondary-950/40 ${
                 isOpen ? "" : "animate-[button-pulse_2.4s_ease-in-out_infinite]"
               }`}
             >
-              Abrir invitación
+              <RiCursorHand/>              
             </span>
           </button>
         </div>
