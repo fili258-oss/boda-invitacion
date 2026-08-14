@@ -15,7 +15,7 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative h-dvh w-full md:w-[40%] lg:w[30%] overflow-hidden">
+    <div className="flex relative h-dvh w-full md:w-[40%] lg:w[30%] overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/5.png"
         alt=""
@@ -46,7 +46,7 @@ export default function HeroSection() {
             <span
               aria-hidden
               className={`absolute inset-0 -z-10 rounded-full bg-secondary-400/70 ${
-                isOpen ? "" : "animate-ping"
+                isOpen ? "" : "animate-bounce-pulse"
               }`}
             />
             <span
@@ -59,6 +59,6 @@ export default function HeroSection() {
           </button>
         </div>
       )}
-    </section>
+    </div>
   );
 }
