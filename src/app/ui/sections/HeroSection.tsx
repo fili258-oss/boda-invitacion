@@ -15,13 +15,13 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="relative h-dvh w-full overflow-hidden">
+    <section className="relative h-dvh w-full md:w-[40%] lg:w[30%] overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/5.png"
         alt=""
         fill
         priority
-        className="object-cover"
+        className="absolute inset-0 -z-10 h-full w-full object-cover"
       />
 
       <video
@@ -33,7 +33,7 @@ export default function HeroSection() {
       />
 
       {showButton && (
-        <div className="absolute inset-0 flex items-center justify-center">
+        <div className="absolute inset-0 flex justify-center top-[40%]">
           <button
             onClick={handleOpen}
             onTransitionEnd={(e) => {
@@ -54,7 +54,7 @@ export default function HeroSection() {
                 isOpen ? "" : "animate-[button-pulse_2.4s_ease-in-out_infinite]"
               }`}
             >
-              <RiCursorHand/>              
+              <RiCursorHand/>                                                
             </span>
           </button>
         </div>

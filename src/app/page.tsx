@@ -2,7 +2,7 @@ import HeroSection from "@/app/ui/sections/HeroSection";
 
 export default function Home() {
   return (
-    <main className="relative w-full">
+    <main className="flex flex-wrap justify-center w-full bg-primary-300">
       <HeroSection />
 
       {/* Próxima sección: pendiente de fondo e ilustración propios */}
