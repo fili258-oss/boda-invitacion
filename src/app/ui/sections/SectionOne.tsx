@@ -1,5 +1,4 @@
 "use client";
-import React from 'react'
 import Image from "next/image";
 
 export default function SectionOne() {
@@ -24,6 +23,9 @@ export default function SectionOne() {
                 Angelo & Carolina
             </h2>
             <p className="text-2xl text-center">Quieren compartir un momento especial contigo</p>
+            <button className="bg-primary-500 hover:bg-primary-600 text-white font-bold py-2 px-4 rounded-full animate-bounce">
+                Más información
+            </button>
         </div>
         
         

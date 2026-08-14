@@ -45,13 +45,13 @@ export default function HeroSection() {
           >
             <span
               aria-hidden
-              className={`absolute inset-0 -z-10 rounded-full bg-secondary-400/70 ${
+              className={`inset-0 -z-10 rounded-full bg-secondary-400/70 ${
                 isOpen ? "" : "animate-bounce-pulse"
               }`}
             />
             <span
               className={`relative z-10 block rounded-full bg-secondary-600 px-8 py-3 text-xl tracking-wide text-primary-50 shadow-lg shadow-secondary-950/40 ${
-                isOpen ? "" : "animate-[button-pulse_2.4s_ease-in-out_infinite]"
+                isOpen ? "" : "animate-bounce"
               }`}
             >
               <RiCursorHand/>                                                
