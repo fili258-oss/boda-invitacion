@@ -1,4 +1,5 @@
 "use client";
+import WeddingCountdown from "@/app/_components/Weddingcountdown";
 import Image from "next/image";
 
 export default function SectionOne() {
@@ -15,7 +16,7 @@ export default function SectionOne() {
             <h2 className="flex z-20 text-center text-4xl md:text-6xl lg:text-6xl font-bold text-primary-100 ">
                 Nuestra boda comienza en...
             </h2>           
-            
+            <WeddingCountdown />
 
         </div>
         

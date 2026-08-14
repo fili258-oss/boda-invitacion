@@ -1,0 +1,125 @@
+/*
+ * WeddingCountdown.css
+ *
+ * Importa este archivo en tu layout.tsx o globals.css:
+ *   @import "./WeddingCountdown.css";
+ *
+ * Asegúrate de que tus variables CSS de paleta y tipografía
+ * estén declaradas en :root (en globals.css o layout).
+ */
+
+/* ── Wrapper ─────────────────────────────────────────────────────────────── */
+
+.countdown-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2.5rem 2rem;
+  width: 100%;
+}
+
+/* ── Eyebrow (texto encima del contador) ─────────────────────────────────── */
+
+.countdown-eyebrow {
+  font-family: var(--font-meow-script);
+  font-size: clamp(2.0rem, 4vw, 2.5rem);
+  color: var(--color-secondary-100);
+  letter-spacing: 0.04em;
+  text-align: center;
+  line-height: 1.2;
+}
+
+/* ── Grid del contador ───────────────────────────────────────────────────── */
+
+.countdown-grid {
+  display: flex;
+  align-items: center;
+  gap: clamp(0.5rem, 2vw, 1.5rem);
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ── Unidad individual (número + etiqueta) ───────────────────────────────── */
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.375rem;
+  min-width: clamp(3.5rem, 10vw, 6rem);
+}
+
+.countdown-number {
+  font-family: var(--font-iniria-serif);
+  font-size: clamp(2.75rem, 9vw, 6rem);
+  font-weight: 700;
+  line-height: 1;
+  color: var(--color-primary-800);
+
+  /* Contenedor con fondo tenue */
+  background-color: var(--color-primary-100);
+  border: 1px solid var(--color-primary-300);
+  border-radius: 0.75rem;
+  padding: 0.5rem 0.75rem;
+  min-width: clamp(3.5rem, 10vw, 6rem);
+  text-align: center;
+
+  /* Evita saltos de layout al cambiar dígitos */
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+.countdown-label {
+  font-family: var(--font-hortensia);
+  font-size: clamp(0.85rem, 1.8vw, 0.875rem);
+  color: var(--color-primary-100);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-weight: 500;
+}
+
+/* ── Separador (:) ───────────────────────────────────────────────────────── */
+
+.countdown-separator {
+  font-family: var(--font-iniria-serif);
+  font-size: clamp(2rem, 6vw, 4rem);
+  font-weight: 700;
+  color: var(--color-primary-400);
+  line-height: 1;
+  /* Alinea verticalmente con los números, compensando el label */
+  margin-bottom: 1.5rem;
+  user-select: none;
+}
+
+/* ── Footnote ────────────────────────────────────────────────────────────── */
+
+.countdown-footnote {
+  font-family: var(--font-iniria-serif);
+  font-size: clamp(0.7rem, 1.5vw, 0.875rem);
+  color: var(--color-primary-100);
+  letter-spacing: 0.08em;
+  text-align: center;
+  font-style: italic;
+}
+
+/* ── Estado "ya pasó" ────────────────────────────────────────────────────── */
+
+.countdown-past {
+  font-family: var(--font-meow-script);
+  font-size: clamp(1.75rem, 5vw, 3rem);
+  color: var(--color-secondary-600);
+  text-align: center;
+}
+
+/* ── Responsive: móvil pequeño (<360 px) ─────────────────────────────────── */
+
+@media (max-width: 360px) {
+  .countdown-separator {
+    display: none;
+  }
+
+  .countdown-grid {
+    gap: 0.5rem;
+  }
+}
