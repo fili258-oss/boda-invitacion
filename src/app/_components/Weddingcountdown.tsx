@@ -70,7 +70,7 @@ function pad(value: number): string {
 function CountdownUnit({ value, label }: CountdownUnitProps) {
   return (
     <div className="countdown-unit">
-      <div className="countdown-number">{pad(value)}</div>
+      <div className="countdown-number"><p>{pad(value)}</p></div>
       <div className="countdown-label">{label}</div>
     </div>
   );
