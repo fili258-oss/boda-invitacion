@@ -5,6 +5,7 @@ import SectionThree from "./ui/sections/SectionThree";
 import SectionFour from "./ui/sections/SectionFour";
 import SectionFive from "./ui/sections/SectionFive";
 import SectionSix from "./ui/sections/SectionSix";
+import SectionSeven from "./ui/sections/SectionSeven";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <SectionFour />
       <SectionFive />
       <SectionSix />
+      <SectionSeven />
       
 
       
