@@ -6,6 +6,9 @@ import SectionFour from "./ui/sections/SectionFour";
 import SectionFive from "./ui/sections/SectionFive";
 import SectionSix from "./ui/sections/SectionSix";
 import SectionSeven from "./ui/sections/SectionSeven";
+import SectionEight from "./ui/sections/SectionEight";
+import SectionNine from "./ui/sections/SectionNine";
+import SectionTen from "./ui/sections/SectionTen";
 
 export default function Home() {
   return (
@@ -18,6 +21,9 @@ export default function Home() {
       <SectionFive />
       <SectionSix />
       <SectionSeven />
+      <SectionEight />
+      <SectionNine />
+      <SectionTen />
       
 
       

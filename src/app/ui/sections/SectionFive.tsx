@@ -27,10 +27,10 @@ export default function SectionFive() {
             </div>
                         
 
-            <button className="bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 mt-20 rounded-full animate-bounce">
+            <a href="https://maps.app.goo.gl/MCHyzxmsvucskkQo8" target="_blank" rel="noopener noreferrer" className="bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 mt-20 rounded-full animate-bounce">
                 <CiLocationOn className="inline mr-2 text-3xl" />
                 Ver ubicación
-            </button>
+            </a>
             <Image
             src="/assets/images/elements/23.png"
             alt="Adorno de la sección cinco"
