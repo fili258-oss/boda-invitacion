@@ -112,7 +112,7 @@ export default function WeddingCountdown() {
         <CountdownUnit value={timeLeft.days} label="Días" />
         <Separator />
         <CountdownUnit value={timeLeft.hours} label="Horas" />
-        <Separator />
+        <Separator />             
         <CountdownUnit value={timeLeft.minutes} label="Minutos" />
         <Separator />
         <CountdownUnit value={timeLeft.seconds} label="Segundos" />

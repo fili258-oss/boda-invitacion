@@ -1,0 +1,48 @@
+"use client";
+import Image from "next/image";
+import { CiLocationOn } from "react-icons/ci";
+
+export default function SectionFive() {
+  return (
+    <div className="flex flex-wrap items-center relative h-dvh w-full md:w-[40%] lg:w[30%] overflow-hidden">
+        <Image
+        src="/assets/images/backgrounds/PNGFondo/20.png"
+        alt="Fondo de la sección uno"
+        fill
+        priority
+        className="z-10 h-full w-full object-cover"
+        />
+        <div className="flex flex-wrap basis-5/5 z-20 justify-center gap-8 px-8 md:px-4 lg:px-8">                        
+            <Image
+            src="/assets/images/elements/22.png"
+            alt="Adorno de la sección cinco"
+            className="z-20 object-contain"
+            width={100}
+            height={50}
+            />            
+            <div className="flex flex-col items-center gap-8">
+                <p className="text-4xl text-center">Ceremonía religosa</p>
+                <p className="text-2xl bold text-primary-600"><strong>Hora:</strong> 12:00 PM</p>
+                <p className="text-2xl bold text-primary-600"><strong>Lugar:</strong> Iglesia Principal</p>
+            </div>
+                        
+
+            <button className="bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 mt-20 rounded-full animate-bounce">
+                <CiLocationOn className="inline mr-2 text-3xl" />
+                Ver ubicación
+            </button>
+            <Image
+            src="/assets/images/elements/23.png"
+            alt="Adorno de la sección cinco"
+            className="z-20 object-contain"
+            width={400}
+            height={20}
+            />
+
+        </div>
+        
+        
+        
+    </div>
+  )
+}

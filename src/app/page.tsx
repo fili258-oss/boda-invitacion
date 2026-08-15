@@ -2,6 +2,9 @@ import HeroSection from "@/app/ui/sections/HeroSection";
 import SectionOne from "./ui/sections/SectionOne";
 import SectionTwo from "./ui/sections/SectionTwo";
 import SectionThree from "./ui/sections/SectionThree";
+import SectionFour from "./ui/sections/SectionFour";
+import SectionFive from "./ui/sections/SectionFive";
+import SectionSix from "./ui/sections/SectionSix";
 
 export default function Home() {
   return (
@@ -10,8 +13,10 @@ export default function Home() {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
+      <SectionFive />
+      <SectionSix />
       
-
 
       
     </main>
