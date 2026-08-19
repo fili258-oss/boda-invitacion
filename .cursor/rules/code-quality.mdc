@@ -1,0 +1,64 @@
+---
+description: Principios SOLID y código limpio para todos los archivos del proyecto
+alwaysApply: true
+---
+
+# Calidad de código — SOLID y Clean Code
+
+## Principios SOLID aplicados a React/Next.js
+
+**S — Single Responsibility**: cada componente hace una sola cosa.
+```tsx
+// ✅ Un componente = una responsabilidad
+export function CountdownUnit({ value, label }: CountdownUnitProps) { ... }
+
+// ❌ Un componente que formatea, calcula y renderiza todo
+export function BigCountdown() { /* 150 líneas mezcladas */ }
+```
+
+**O — Open/Closed**: extender mediante props/composición, no modificando internos.
+```tsx
+// ✅ Extender por props
+<SectionTitle variant="script" size="lg">Nos casamos</SectionTitle>
+
+// ❌ Duplicar el componente para cambiar el estilo
+```
+
+**L — Liskov Substitution**: los componentes hijos deben poder reemplazar al padre sin romper nada. Respetar contratos de props con TypeScript.
+
+**I — Interface Segregation**: props pequeñas y enfocadas; no pasar objetos enormes cuando solo se necesita un campo.
+```tsx
+// ✅
+interface CountdownUnitProps { value: number; label: string }
+
+// ❌
+interface CountdownUnitProps { wedding: WeddingData } // solo usa wedding.date
+```
+
+**D — Dependency Inversion**: los componentes de UI no llaman APIs directamente; reciben datos como props o consumen un hook/contexto dedicado.
+
+## Clean Code
+
+- **Nombres descriptivos**: `WeddingCountdown`, `useCountdown`, `formatTimeUnit` — nunca `Comp1`, `x`, `tmp`.
+- **Funciones cortas**: máximo ~20 líneas por función; extraer si crece.
+- **Sin comentarios que narran el código**: el código debe ser auto-explicativo.
+- **Props con tipos explícitos**: siempre definir `interface` o `type` para props de cada componente.
+- **No `any`**: usar tipos precisos o `unknown` con type guard.
+- **Evitar efectos secundarios innecesarios**: preferir funciones puras; los side effects van en `useEffect` o Server Actions.
+
+## Estructura de componentes
+
+```tsx
+// Orden dentro de un archivo .tsx
+1. Imports
+2. Types / Interfaces
+3. Constantes del módulo (si aplica)
+4. Componente principal (export default / named export)
+5. Subcomponentes auxiliares del mismo archivo (si son pequeños)
+```
+
+## Server vs Client Components
+
+- Por defecto, todos los componentes son **Server Components**.
+- Agregar `'use client'` solo cuando se necesite: estado, efectos, eventos de usuario o APIs de navegador.
+- Los componentes con `'use client'` deben ser lo más pequeños posible (hoisted to leaf).

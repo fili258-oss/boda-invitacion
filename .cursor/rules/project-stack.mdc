@@ -1,0 +1,42 @@
+---
+description: Stack técnico del proyecto y restricciones de diseño (Next.js 16, Tailwind CSS 4, TypeScript, solo móvil)
+alwaysApply: true
+---
+
+# Stack del proyecto — Invitación de Boda
+
+## Versiones
+
+- **Next.js 16** con App Router y React 19
+- **Tailwind CSS 4** — API `@theme {}` en `globals.css` (sin `tailwind.config.js`)
+- **TypeScript** estricto — no usar `any`
+- **react-icons** para íconos
+
+## Diseño exclusivo para móvil
+
+La invitación **solo se consulta desde celulares**. Diseña únicamente para pantallas pequeñas (≤ 430 px).
+
+```
+✅ Breakpoints permitidos: base (sin prefijo) y sm:
+❌ No usar: md:, lg:, xl:, 2xl:
+```
+
+- Usa `min-h-screen`, `w-full` y porcentajes; evita anchos fijos mayores a `max-w-sm`.
+- Prefiere unidades relativas (`rem`, `vw`, `vh`, `%`) y `clamp()` para tipografía fluida.
+- Evita hover states como funcionalidad principal (los celulares no tienen hover).
+
+## Convenciones de archivos
+
+| Tipo | Ubicación |
+|------|-----------|
+| Secciones de página | `src/app/ui/sections/` |
+| Componentes reutilizables | `src/app/_components/` |
+| Fuentes | `src/app/ui/fonts.ts` |
+| CSS de componentes | `src/app/css/` |
+| Estilos globales | `src/app/globals.css` |
+
+## CSS con Tailwind 4
+
+- Las variables de tema se definen en `globals.css` bajo `@theme {}` — no crear `tailwind.config.js`.
+- Para clases personalizadas fuera de Tailwind, crear un archivo `.css` en `src/app/css/` e importarlo en `globals.css`.
+- Preferir clases utilitarias de Tailwind sobre CSS custom cuando sea posible.
