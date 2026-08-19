@@ -16,6 +16,10 @@ export default function HeroSection({ videoSrc }: HeroSectionProps) {
   const [showButton, setShowButton] = useState(true);
   const { isPlaying, play, toggle } = useAudioPlayer('/assets/music/halelulla.mp3');
 
+  const handleVideoEnd = () => {
+    document.getElementById('section-one')?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   const handleOpen = () => {
     setIsOpen(true);
     videoRef.current?.play();
@@ -37,6 +41,7 @@ export default function HeroSection({ videoSrc }: HeroSectionProps) {
         src={videoSrc}
         playsInline
         preload="auto"
+        onEnded={handleVideoEnd}
         className="absolute inset-0 h-full w-full object-cover"
       />
 

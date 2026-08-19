@@ -6,30 +6,30 @@ export default function SectionNine() {
   return (
     <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
-        src="/assets/images/backgrounds/PNGFondo/26.png"
+        src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección nueve"
         fill
         priority
         className="z-10 h-full w-full object-cover"
       />
-      <div className="flex flex-wrap basis-5/5 z-20 justify-center gap-8 px-8">
+      <div className="flex flex-wrap basis-5/5 z-20 items-center justify-center gap-4 px-4">
         <Image
           src="/assets/images/elements/32.png"
           alt="Adorno de la sección nueve"
           className="z-20 object-contain"
-          width={200}
-          height={100}
+          width={100}
+          height={50}
         />
         <h2 className="flex z-20 text-center text-4xl font-bold text-primary-500">
           Información importante
         </h2>
-        <CiCircleCheck className="inline mr-2 text-3xl text-primary-500" />
+        <CiCircleCheck className="inline mr-2 text-6xl text-primary-500" />
         <p className="text-2xl text-center">
-          A la hora de la ceremonía: puden llevar niños
+          <strong>Ceremonía:</strong> Los más pequeños son bienvenidos.
         </p>
-        <CiCircleRemove className="inline mr-2 text-3xl text-primary-500" />
+        <CiCircleRemove className="inline mr-2 text-6xl text-primary-500" />
         <p className="text-2xl text-center">
-          A la hora de la recepción: no se permite el ingreso de niños
+          <strong>Recepción:</strong> Esta celebración será solo para adultos.
         </p>
       </div>
     </div>

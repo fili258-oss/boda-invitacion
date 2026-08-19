@@ -6,7 +6,7 @@ export default function SectionFive() {
   return (
     <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
-        src="/assets/images/backgrounds/PNGFondo/20.png"
+        src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección cinco"
         fill
         priority
@@ -23,14 +23,14 @@ export default function SectionFive() {
         <div className="flex flex-col items-center gap-8">
           <p className="text-4xl text-center">Ceremonía religosa</p>
           <p className="text-2xl bold text-primary-600">
-            <strong>Hora:</strong> 12:00 PM
+            <strong>Hora:</strong> 5:00 PM
           </p>
           <p className="text-2xl bold text-primary-600">
-            <strong>Lugar:</strong> Iglesia Principal
+            <strong>Lugar:</strong> Iglesia cátedral - Parque Colón
           </p>
         </div>
         <a
-          href="https://maps.app.goo.gl/MCHyzxmsvucskkQo8"
+          href="https://maps.app.goo.gl/tJMm2y25oafXbDsQ7"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 mt-20 rounded-full animate-bounce"
