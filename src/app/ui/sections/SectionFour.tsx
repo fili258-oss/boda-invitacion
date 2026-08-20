@@ -18,7 +18,7 @@ export default function SectionFour() {
             src="/assets/images/elements/17.avif"
             alt="Adorno de la sección cuatro"
             className="top-2 relative z-20 object-contain"
-            width={320}
+            width={300}
             height={100}
           />
         </FadeIn>
@@ -27,7 +27,7 @@ export default function SectionFour() {
             src="/assets/images/elements/AngeloCaroG.avif"
             alt="Foto de Angelo y Carolina"
             className="-top-16 relative z-20 object-contain"
-            width={250}
+            width={230}
             height={100}
           />
         </FadeIn>
@@ -35,8 +35,8 @@ export default function SectionFour() {
           <Image
             src="/assets/images/elements/18.avif"
             alt="Adorno de la sección cuatro"
-            className="-top-12 relative z-20 object-contain"
-            width={250}
+            className="-top-18 relative z-20 object-contain"
+            width={230}
             height={100}
           />
         </FadeIn>
