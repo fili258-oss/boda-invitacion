@@ -12,6 +12,9 @@ const SLIDE_IMAGES = [
 ];
 
 export default function SectionOne() {
+  const handleScrollToInvitation = () => {
+    document.getElementById('invitation-section')?.scrollIntoView({ behavior: 'smooth' });
+  };
   return (
     <div id="section-one" className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
@@ -30,7 +33,7 @@ export default function SectionOne() {
             Angelo &amp; Carolina
           </h2>
           <p className="text-2xl text-center">Quieren compartir un momento especial contigo</p>
-          <button className="cursor-pointer bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 rounded-full animate-bounce mt-8">
+          <button onClick={handleScrollToInvitation} className="cursor-pointer bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 rounded-full animate-bounce mt-8">
             Ver invitación
           </button>
         </div>

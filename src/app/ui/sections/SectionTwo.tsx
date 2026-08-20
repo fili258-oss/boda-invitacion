@@ -12,7 +12,7 @@ export default function SectionTwo({ whatsappMessage }: SectionTwoProps) {
   const href = `https://api.whatsapp.com/send?phone=573008497024&text=${encodedMsg}`;
 
   return (
-    <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
+    <div id="invitation-section" className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/SectionTwo.avif"
         alt="Fondo de la sección dos"
