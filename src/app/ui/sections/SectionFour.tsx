@@ -34,7 +34,7 @@ export default function SectionFour() {
           height={100}
         />        
       </div>
-      <div className='clear-both'></div>
+      <div className="clear-both"></div>
     </div>
   );
 }
