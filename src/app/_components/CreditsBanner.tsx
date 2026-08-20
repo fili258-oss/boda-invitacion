@@ -3,8 +3,8 @@ import { IoMdHeartEmpty } from 'react-icons/io';
 
 export default function CreditsBanner() {
   return (
-    <section className="w-full bg-primary-950 py-8 flex items-center justify-center">
-      <p className="text-primary-300 text-sm text-center font-hortensia tracking-wide">
+    <section className="w-full bg-primary-950 py-2 flex items-center justify-center">
+      <p className="text-primary-300 text-[12px] text-center font-hortensia tracking-wide">
         Desarrollado con el {' '}
         <IoMdHeartEmpty className="inline text-secondary-500 text-base" />{' '}
         por{' '}

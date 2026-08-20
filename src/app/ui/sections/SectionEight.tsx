@@ -24,7 +24,7 @@ export default function SectionEight() {
         </FadeIn>
         <div className="flex flex-col items-center gap-8">
           <p className="text-4xl bold text-center">
-            Ese día no habrá paraguas… pero sí una lluvia de sobres que nos llenará de
+            Ese día no habrá paraguas… pero sí una <span className="text-secondary-600">lluvia de sobres</span> que nos llenará de
             sueños y proyectos.
           </p>
           <p className="text-xl italic text-center">
