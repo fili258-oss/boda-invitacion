@@ -4,21 +4,21 @@ import FadeIn from '@/app/_components/FadeIn';
 
 export default function SectionFour() {
   return (
-    <div className="flex flex-col relative h-screen w-full overflow-hidden">
+    <div className="flex relative h-screen w-full overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección cuatro"
         fill
         priority
-        className="z-10 h-full w-full object-cover"
+        className="z-10 h-auto w-full object-cover"
       />
-      <div className="flex flex-wrap basis-auto z-20 justify-center items-center px-8">
+      <div className="flex flex-wrap z-20 justify-center items-center px-8">
         <FadeIn delay={0}>
           <Image
             src="/assets/images/elements/17.avif"
             alt="Adorno de la sección cuatro"
-            className="top-4 relative z-20 object-contain"
-            width={350}
+            className="top-2 relative z-20 object-contain"
+            width={320}
             height={100}
           />
         </FadeIn>
@@ -40,8 +40,8 @@ export default function SectionFour() {
             height={100}
           />
         </FadeIn>
-      </div>
-      <div className="clear-both"></div>
+        <div className="mb-14"></div>
+      </div>      
     </div>
   );
 }

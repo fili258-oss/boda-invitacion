@@ -30,7 +30,7 @@ export default async function PasePage({ params }: PasePageProps) {
 
   return (
     <main className="flex flex-col items-center w-full bg-primary-300">
-      <HeroSection videoSrc={config.videoSrc} />
+      <HeroSection key={config.videoSrc} videoSrc={config.videoSrc} />
       <SectionOne />
       <SectionTwo whatsappMessage={config.whatsappMessage} />
       <SectionThree />
