@@ -24,7 +24,7 @@ export default function SectionTwo({ whatsappMessage }: SectionTwoProps) {
           ¡Nos casamos!
         </h2>
         <Image
-          src="/assets/images/elements/16.png"
+          src="/assets/images/elements/anillos-icono.avif"
           alt="Adorno de la sección dos"
           className="z-20 object-contain"
           width={80}

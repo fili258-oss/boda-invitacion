@@ -5,7 +5,7 @@ export default function SectionSeven() {
   return (
     <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
-        src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
+        src="/assets/images/backgrounds/PNGFondo/SectionTwo.avif"
         alt="Fondo de la sección siete"
         fill
         priority
@@ -16,7 +16,7 @@ export default function SectionSeven() {
           Vestimenta casual o formal
         </h2>
         <Image
-          src="/assets/images/elements/23.png"
+          src="/assets/images/elements/adorno-icono.avif"
           alt="Adorno de la sección siete"
           className="z-20 object-contain"
           width={200}

@@ -6,7 +6,7 @@ export default function SectionNine() {
   return (
     <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
-        src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
+        src="/assets/images/backgrounds/PNGFondo/SectionTwo.avif"
         alt="Fondo de la sección nueve"
         fill
         priority
@@ -14,7 +14,7 @@ export default function SectionNine() {
       />
       <div className="flex flex-wrap basis-5/5 z-20 items-center justify-center gap-4 px-4">
         <Image
-          src="/assets/images/elements/32.png"
+          src="/assets/images/elements/corazones-icono.avif"
           alt="Adorno de la sección nueve"
           className="z-20 object-contain"
           width={100}

@@ -6,7 +6,7 @@ export default function SectionSix() {
   return (
     <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
-        src="/assets/images/backgrounds/PNGFondo/SectionTwo.avif"
+        src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección seis"
         fill
         priority
@@ -14,14 +14,14 @@ export default function SectionSix() {
       />
       <div className="flex flex-wrap basis-5/5 z-20 justify-center gap-8 px-8">
         <Image
-          src="/assets/images/elements/25.avif"
+          src="/assets/images/elements/copas-icono.avif"
           alt="Adorno copas"
           className="z-20 object-contain"
           width={100}
           height={50}
         />
         <Image
-          src="/assets/images/elements/23.png"
+          src="/assets/images/elements/adorno-icono.avif"
           alt="Adorno de la sección seis"
           className="z-20 object-contain"
           width={400}
@@ -41,7 +41,7 @@ export default function SectionSix() {
           Cómo llegar
         </a>
         <Image
-          src="/assets/images/elements/23.png"
+          src="/assets/images/elements/adorno-icono.avif"
           alt="Adorno de la sección seis"
           className="z-20 object-contain"
           width={400}

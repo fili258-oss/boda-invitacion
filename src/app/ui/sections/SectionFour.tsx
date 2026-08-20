@@ -5,7 +5,7 @@ export default function SectionFour() {
   return (
     <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
-        src="/assets/images/backgrounds/PNGFondo/SectionTwo.avif"
+        src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección cuatro"
         fill
         priority

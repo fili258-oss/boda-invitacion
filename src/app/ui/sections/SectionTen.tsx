@@ -13,7 +13,7 @@ export default function SectionTen({ whatsappMessage }: SectionTenProps) {
   return (
     <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
       <Image
-        src="/assets/images/backgrounds/PNGFondo/SectionTwo.avif"
+        src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección diez"
         fill
         priority
