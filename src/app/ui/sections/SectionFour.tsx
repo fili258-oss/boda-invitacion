@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 export default function SectionFour() {
   return (
-    <div className="flex flex-col relative h-dvh w-full overflow-hidden">
+    <div className="flex flex-col relative h-full w-full overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección cuatro"
@@ -34,7 +34,7 @@ export default function SectionFour() {
           height={100}
         />        
       </div>
-      <div className='clear-both mt-10'></div>
+      <div className='clear-both'></div>
     </div>
   );
 }
