@@ -85,9 +85,7 @@ function Separator() {
 export default function WeddingCountdown() {
   const targetMs = parseBogotaDate(WEDDING_DATE_BOGOTA);
 
-  const [timeLeft, setTimeLeft] = useState<TimeRemaining>(() =>
-    computeTimeRemaining(targetMs)
-  );
+  const [timeLeft, setTimeLeft] = useState<TimeRemaining | null>(null);
 
   useEffect(() => {
     const tick = () => setTimeLeft(computeTimeRemaining(targetMs));
@@ -96,6 +94,7 @@ export default function WeddingCountdown() {
     return () => clearInterval(id);
   }, [targetMs]);
 
+  if (!timeLeft) return null;
   if (timeLeft.isPast) {
     return (
       <div className="countdown-wrapper">
@@ -109,13 +108,16 @@ export default function WeddingCountdown() {
       {/* Decorative header */}      
       {/* Counter grid */}
       <div className="countdown-grid">
-        <CountdownUnit value={timeLeft.days} label="Días" />
-        <Separator />
-        <CountdownUnit value={timeLeft.hours} label="Horas" />
-        <Separator />             
-        <CountdownUnit value={timeLeft.minutes} label="Minutos" />
-        <Separator />
-        <CountdownUnit value={timeLeft.seconds} label="Segundos" />
+        <div className="countdown-row">
+          <CountdownUnit value={timeLeft.days} label="Días" />
+          <Separator />
+          <CountdownUnit value={timeLeft.hours} label="Horas" />
+        </div>
+        <div className="countdown-row">
+          <CountdownUnit value={timeLeft.minutes} label="Minutos" />
+          <Separator />
+          <CountdownUnit value={timeLeft.seconds} label="Segundos" />
+        </div>
       </div>
 
       {/* Decorative footer */}

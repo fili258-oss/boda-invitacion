@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import ImageSlider from '@/app/_components/ImageSlider';
+import FadeIn from '@/app/_components/FadeIn';
 
 const SLIDE_IMAGES = [
   { src: '/assets/images/backgrounds/PNGFondo/AngeloCaroSlideUno.avif',    alt: 'Angelo y Carolina 1' },
@@ -21,7 +22,9 @@ export default function SectionOne() {
         className="z-10 h-full w-full object-cover"
       />
       <div className="flex flex-wrap basis-5/5 z-20 justify-center gap-4 px-8">
-        <ImageSlider images={SLIDE_IMAGES} width={260} height={450} intervalMs={4000} />
+        <FadeIn>
+          <ImageSlider images={SLIDE_IMAGES} width={260} height={450} intervalMs={4000} />
+        </FadeIn>
         <div className="flex flex-wrap items-center justify-center gap-4">
           <h2 className="flex z-20 text-4xl font-bold text-primary-500">
             Angelo &amp; Carolina

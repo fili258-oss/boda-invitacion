@@ -11,6 +11,7 @@ import SectionSeven from '@/app/ui/sections/SectionSeven';
 import SectionEight from '@/app/ui/sections/SectionEight';
 import SectionNine from '@/app/ui/sections/SectionNine';
 import SectionTen from '@/app/ui/sections/SectionTen';
+import CreditsBanner from '@/app/_components/CreditsBanner';
 
 export function generateStaticParams() {
   return Object.keys(PASES).map((pase) => ({ pase }));
@@ -40,6 +41,7 @@ export default async function PasePage({ params }: PasePageProps) {
       <SectionEight />
       <SectionNine />
       <SectionTen whatsappMessage={config.whatsappMessage} />
+      <CreditsBanner />
     </main>
   );
 }

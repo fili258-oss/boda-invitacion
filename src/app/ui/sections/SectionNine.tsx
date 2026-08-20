@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { CiCircleCheck, CiCircleRemove } from 'react-icons/ci';
+import FadeIn from '@/app/_components/FadeIn';
 
 export default function SectionNine() {
   return (
@@ -13,13 +14,15 @@ export default function SectionNine() {
         className="z-10 h-full w-full object-cover"
       />
       <div className="flex flex-wrap basis-5/5 z-20 items-center justify-center gap-4 px-4">
-        <Image
-          src="/assets/images/elements/corazones-icono.avif"
-          alt="Adorno de la sección nueve"
-          className="z-20 object-contain"
-          width={100}
-          height={50}
-        />
+        <FadeIn>
+          <Image
+            src="/assets/images/elements/corazones-icono.avif"
+            alt="Adorno de la sección nueve"
+            className="z-20 object-contain"
+            width={100}
+            height={50}
+          />
+        </FadeIn>
         <h2 className="flex z-20 text-center text-4xl font-bold text-primary-500">
           Información importante
         </h2>

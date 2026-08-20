@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { CiLocationArrow1 } from 'react-icons/ci';
+import FadeIn from '@/app/_components/FadeIn';
 
 export default function SectionSix() {
   return (
@@ -13,20 +14,24 @@ export default function SectionSix() {
         className="z-10 h-full w-full object-cover"
       />
       <div className="flex flex-wrap basis-5/5 z-20 justify-center gap-8 px-8">
-        <Image
-          src="/assets/images/elements/copas-icono.avif"
-          alt="Adorno copas"
-          className="z-20 object-contain"
-          width={100}
-          height={50}
-        />
-        <Image
-          src="/assets/images/elements/adorno-icono.avif"
-          alt="Adorno de la sección seis"
-          className="z-20 object-contain"
-          width={400}
-          height={20}
-        />
+        <FadeIn>
+          <Image
+            src="/assets/images/elements/copas-icono.avif"
+            alt="Adorno copas"
+            className="z-20 object-contain"
+            width={100}
+            height={50}
+          />
+        </FadeIn>
+        <FadeIn delay={100}>
+          <Image
+            src="/assets/images/elements/adorno-icono.avif"
+            alt="Adorno de la sección seis"
+            className="z-20 object-contain"
+            width={400}
+            height={20}
+          />
+        </FadeIn>
         <div className="flex flex-col items-center gap-8">
           <p className="text-4xl text-center">Recepción</p>
           <p className="text-2xl bold text-primary-600">
@@ -40,13 +45,15 @@ export default function SectionSix() {
           <CiLocationArrow1 className="inline mr-2 text-3xl" />
           Cómo llegar
         </a>
-        <Image
-          src="/assets/images/elements/adorno-icono.avif"
-          alt="Adorno de la sección seis"
-          className="z-20 object-contain"
-          width={400}
-          height={20}
-        />
+        <FadeIn delay={200}>
+          <Image
+            src="/assets/images/elements/adorno-icono.avif"
+            alt="Adorno de la sección seis"
+            className="z-20 object-contain"
+            width={400}
+            height={20}
+          />
+        </FadeIn>
       </div>
     </div>
   );

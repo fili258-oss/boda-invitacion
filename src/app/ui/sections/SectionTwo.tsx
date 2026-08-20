@@ -1,6 +1,7 @@
 'use client';
 import Image from 'next/image';
 import { CiCircleCheck } from 'react-icons/ci';
+import FadeIn from '@/app/_components/FadeIn';
 
 interface SectionTwoProps {
   whatsappMessage: string;
@@ -23,13 +24,15 @@ export default function SectionTwo({ whatsappMessage }: SectionTwoProps) {
         <h2 className="flex z-20 text-center text-4xl font-bold text-primary-500">
           ¡Nos casamos!
         </h2>
-        <Image
-          src="/assets/images/elements/anillos-icono.avif"
-          alt="Adorno de la sección dos"
-          className="z-20 object-contain"
-          width={80}
-          height={80}
-        />
+        <FadeIn>
+          <Image
+            src="/assets/images/elements/anillos-icono.avif"
+            alt="Adorno de la sección dos"
+            className="z-20 object-contain"
+            width={80}
+            height={80}
+          />
+        </FadeIn>
         <p className="text-2xl text-center">
           Después de tantas historias, risas y sueños compartidos, hemos decidido escribir
           juntos el capítulo más hermoso:
