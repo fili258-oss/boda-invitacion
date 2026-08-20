@@ -16,7 +16,7 @@ export default function SectionOne() {
     document.getElementById('invitation-section')?.scrollIntoView({ behavior: 'smooth' });
   };
   return (
-    <div id="section-one" className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
+    <div id="section-one" className="flex flex-wrap items-center relative h-screen w-full overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección uno"

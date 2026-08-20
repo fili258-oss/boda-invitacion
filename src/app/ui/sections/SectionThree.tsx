@@ -4,7 +4,7 @@ import Image from 'next/image';
 
 export default function SectionThree() {
   return (
-    <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
+    <div className="flex flex-wrap items-center relative h-screen w-full overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/15.png"
         alt="Fondo de la sección tres"

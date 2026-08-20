@@ -1,6 +1,5 @@
 'use client';
 import Image from 'next/image';
-import { CiCircleCheck } from 'react-icons/ci';
 import FadeIn from '@/app/_components/FadeIn';
 
 interface SectionTwoProps {
@@ -12,7 +11,7 @@ export default function SectionTwo({ whatsappMessage }: SectionTwoProps) {
   const href = `https://api.whatsapp.com/send?phone=573008497024&text=${encodedMsg}`;
 
   return (
-    <div id="invitation-section" className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
+    <div id="invitation-section" className="flex flex-wrap items-center relative h-screen w-full overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/SectionTwo.avif"
         alt="Fondo de la sección dos"

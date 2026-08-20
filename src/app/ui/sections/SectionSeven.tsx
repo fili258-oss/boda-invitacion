@@ -4,7 +4,7 @@ import FadeIn from '@/app/_components/FadeIn';
 
 export default function SectionSeven() {
   return (
-    <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
+    <div className="flex flex-wrap items-center relative h-screen w-full overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/SectionTwo.avif"
         alt="Fondo de la sección siete"

@@ -12,7 +12,7 @@ export default function SectionTen({ whatsappMessage }: SectionTenProps) {
   const href = `https://api.whatsapp.com/send?phone=573008497024&text=${encodedMsg}`;
 
   return (
-    <div className="flex flex-wrap items-center relative h-dvh w-full overflow-hidden">
+    <div className="flex flex-wrap items-center relative h-screen w-full overflow-hidden">
       <Image
         src="/assets/images/backgrounds/PNGFondo/SectionOne.avif"
         alt="Fondo de la sección diez"
