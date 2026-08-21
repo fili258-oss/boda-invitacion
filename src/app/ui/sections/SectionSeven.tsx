@@ -26,7 +26,7 @@ export default function SectionSeven() {
           />
         </FadeIn>
         <p className="text-2xl text-center">
-          Colores reservados: <strong>Novio y Novia Blanco</strong>
+          El color blanco ya está reservado, lo usarán los novios.
         </p>
         <div className="flex flex-row basis-5/5 justify-center gap-8">
           <FadeIn delay={0}>

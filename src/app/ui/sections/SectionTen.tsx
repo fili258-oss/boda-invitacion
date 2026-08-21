@@ -35,7 +35,7 @@ export default function SectionTen({ whatsappMessage }: SectionTenProps) {
             Tu compañía es muy importante para nosotros, déjanos saber si contaremos con
             tu asistencia.
           </p>
-          <p className="text-xl italic text-center">Confirmar antes del 12 de octubre.</p>
+
           <FadeIn delay={200}>
             <Image
               src="/assets/images/elements/30.avif"
@@ -45,13 +45,16 @@ export default function SectionTen({ whatsappMessage }: SectionTenProps) {
               height={20}
             />
           </FadeIn>
-          <a
-            href={href}
-            className="bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 mt-20 rounded-full animate-bounce"
-          >
-            <CiCircleCheck className="inline mr-2 text-3xl" />
-            Confirmar asistencia
-          </a>
+          <div className="flex flex-col mt-8 items-center">
+            <p className="text-xl italic text-center mb-4">Confirmar antes del 30 de septiembre.</p>
+            <a
+              href={href}
+              className="bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 mt-2 rounded-full animate-bounce"
+            >
+              <CiCircleCheck className="inline mr-2 text-3xl" />
+              Confirmar asistencia
+            </a>
+          </div>          
         </div>
       </div>
     </div>
