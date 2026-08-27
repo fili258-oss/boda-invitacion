@@ -3,8 +3,37 @@ import { iniriaSerif, meowScript, hortensia } from "@/app/ui/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
+  // Necesario para que las URLs relativas de imágenes se resuelvan como absolutas
+  metadataBase: new URL("https://boda-pases.vercel.app/"),
+
   title: "Boda de Angelo y Carolina",
-  description: "Pases de invitacion de la boda de Angelo y Carolina",
+  description:
+    "Acompáñanos a celebrar la boda de Angelo y Carolina. Queremos compartir este momento especial con todos ustedes.",
+
+  openGraph: {
+    title: "Boda de Angelo y Carolina",
+    description:
+      "Acompáñanos a celebrar la boda de Angelo y Carolina. Encuentra aquí tu pase de invitación.",
+    url: "https://boda-pases.vercel.app/",
+    siteName: "Boda de Angelo y Carolina",
+    type: "website",
+    locale: "es_CO",
+    images: [
+      {
+        url: "/og-image.jpg", // se vuelve absoluta gracias a metadataBase
+        width: 1200,
+        height: 630,
+        alt: "Invitación a la boda de Angelo y Carolina",
+      },
+    ],
+  },
+
+  twitter: {
+    card: "summary_large_image",
+    title: "Boda de Angelo y Carolina",
+    description: "Encuentra aquí tu pase de invitación a la boda.",
+    images: ["/og-image.jpg"],
+  },
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
