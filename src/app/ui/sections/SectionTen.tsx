@@ -46,7 +46,7 @@ export default function SectionTen({ whatsappMessage }: SectionTenProps) {
             />
           </FadeIn>
           <div className="flex flex-col mt-8 items-center">
-            <p className="text-xl italic text-center mb-4">Confirmar antes del 30 de septiembre.</p>
+            <p className="text-xl italic text-center mb-4">Confirmar antes del 30 de octubre.</p>
             <a
               href={href}
               className="bg-primary-500 hover:bg-primary-600 text-white text-2xl font-bold py-2 px-4 mt-2 rounded-full animate-bounce"
